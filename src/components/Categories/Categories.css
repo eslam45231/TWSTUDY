@@ -1,0 +1,119 @@
+.Categories{
+    width: 100%;
+    height: 100vh;
+}
+.containerCat{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 0 15px ;
+    justify-content: space-between;
+    color: white;
+    background-color: #143;
+
+}
+.leftCat{
+width: 35%;
+text-transform: capitalize;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.leftCat p{
+    padding: 10px 0;
+}
+.leftCat button{
+    padding: 10px ;
+    border: none;
+    background-color: rgb(163, 228, 10);
+    text-transform: capitalize;
+    color: rgb(16, 77, 233);
+}
+.rightCat{
+    width: 60%;
+    position: relative;
+}
+.boxes{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1.1);
+}
+.box{
+    width: 30%;
+    color: black;
+    
+}
+.icon{
+    background-color: rgb(6, 115, 230);
+    width: fit-content;
+    padding: 10px 15px ;
+    border-radius: 15px;
+}
+
+@media(max-width:1070px){
+    .containerCat{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .leftCat,.rightCat{
+        width: 100%;
+    }
+    .box{
+        width: 40%;
+    }
+    .boxes{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:810px){
+    .Categories{
+        height: 160vh;
+    }
+    .containerCat{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .leftCat,.rightCat{
+        width: 100%;
+    }
+    .box{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+margin: 30px 0;
+    }
+}
+
+
+/* 
+@media (max-width:767px) {
+    .containerCat{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    .leftCat,.rightCat{
+        width: 100%;
+    }
+    .boxes{
+        display: flex;
+justify-content: center;    }
+    .box{
+        width: 45%;
+    }
+} */

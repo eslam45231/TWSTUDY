@@ -1,0 +1,80 @@
+.Ourpeople{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 0;
+    background-color: black;
+}
+.containerPeople{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.containerPeople .boxPeople{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px ;
+    text-align: center;
+    color: white;
+    background-color: rebeccapurple;
+}
+.containerPeople .boxPeople img{
+    width: 100%;
+    height: 300px;
+}
+
+.containerPeople .boxPeople h1{text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.containerPeople .boxPeople p{
+    padding: 0 15px ;
+    
+}
+
+.containerPeople .boxPeople button{
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    margin: 4px 0;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.containerPeople .boxPeople button:hover{
+    background-color: white;
+    color:blueviolet ;
+}
+
+@media(max-width:990px){
+    .containerPeople{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerPeople .boxPeople{
+        margin: 10px ;
+        width: 45%;
+        padding:  15px  20px;
+    }
+}
+
+
+@media(max-width:767px){
+    .containerPeople{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerPeople .boxPeople{
+        margin: 10px 0;
+        width: 95%;
+        padding:  15px  20px;
+    }
+}
+

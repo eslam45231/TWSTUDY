@@ -1,0 +1,29 @@
+.listMob{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transform: translateX(100%);
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    transition: .2s ;
+    
+}
+
+.activeListmob{
+    transform: translateX(0) !important;
+}
+
+.listMob ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+.listMob li{
+    text-transform: capitalize;
+    padding: 10px ;
+    list-style: none;
+}

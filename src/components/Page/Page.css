@@ -1,0 +1,92 @@
+.Page{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.btnStop{
+    background-color: rgb(200, 31, 174);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right:  -50px;
+    cursor: pointer;
+    transition:.2s ;
+    z-index: 9999999945453135899999;
+}
+.activeBtn{
+    right: 50px !important;
+}
+
+
+.containerColor{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    transform: translateX(100%);
+    width: 16%;
+    transition: .3s;
+    z-index: 9999999;
+    transition: .3s;
+    height: 100%;
+    background-color: saddlebrown;
+}
+.activeContainerColor{
+    transform: translateX(0%) !important;
+
+}
+.activeContainerColor{
+    right: 0;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 2px solid white;
+}
+.colors p{
+    margin:  5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.settings p{
+    position: absolute;
+    left: 0%;
+    transform: translate(-100%,-50%);
+    top: 20%;
+    background-color: red;
+    color: white;
+    padding: 15px ;
+    cursor: pointer;
+}
+
+.white{
+  color: red !important;
+    background-color: white !important;
+}
+
+
+.red{
+  color: white !important;
+    background-color: red !important;
+}
+.aqua{
+  
+background-color: aqua !important;
+}
+.black{
+  color: white !important;
+    background-color: black !important;
+}
+.green{
+  color: aqua  !important;
+    background-color: rgb(4, 246, 101) !important;
+}
+
